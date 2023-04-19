@@ -1,0 +1,71 @@
+====================================================================================================
+Hyperparameter Combination #1:
+
+Results:
+Epoch 99 Training Loss: 0.0846 Training Accuracy: 0.952 Val Loss: 0.0201 Val Accuracy: 1.0
+Test Loss: 0.3021 Test Accuracy: 0.88
+
+Parameters:
+optimizer_args = AttrDict(
+    {
+        "name": "SGD",
+        "lr": 0.01,
+        "lr_scheduler": "constant",
+        "lr_decay": 0.99,
+        "stage_length": 1000,
+        "staircase": True,
+        "clip_norm": 1.0,
+        "momentum": 0.9,
+    }
+)
+
+"seed": 0
+"batch_size": 25
+
+====================================================================================================
+Hyperparameter Combination #2:
+
+Results:
+Epoch 99 Training Loss: 0.0630 Training Accuracy: 0.968 Val Loss: 0.0201 Val Accuracy: 1.0
+Test Loss: 0.3021 Test Accuracy: 0.
+
+Parameters:
+optimizer_args = AttrDict(
+    {
+        "name": "SGD",
+        "lr": 0.007,
+        "lr_scheduler": "constant",
+        "lr_decay": 0.985,
+        "stage_length": 1000,
+        "staircase": True,
+        "clip_norm": 1.0,
+        "momentum": 0.925,
+    }
+)
+
+"seed": 10
+"batch_size": 50
+
+====================================================================================================
+Hyperparameter Combination #3:
+
+Results:
+Epoch 99 Training Loss: 0.0846 Training Accuracy: 0.952 Val Loss: 0.0201 Val Accuracy: 1.0
+Test Loss: 0.3021 Test Accuracy: 0.88
+
+Parameters:
+optimizer_args = AttrDict(
+    {
+        "name": "SGD",
+        "lr": 0.00825,
+        "lr_scheduler": "constant",
+        "lr_decay": 0.965,
+        "stage_length": 1000,
+        "staircase": True,
+        "clip_norm": 1.0,
+        "momentum": 0.950,
+    }
+)
+
+"seed": 10
+"batch_size": 75
